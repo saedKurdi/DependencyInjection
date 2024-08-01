@@ -1,0 +1,39 @@
+﻿@model FastFoodAddViewModel
+<section style="text-align:center;">
+    <h1>Welcome To Add Page !</h1>
+    <form asp-action="Add" asp-controller="FastFood">
+        <input style="display:none;" readonly asp-for="@Model.NewFastFood.Id"/>
+        <div>
+            <label asp-for="@Model.NewFastFood.Name"></label>
+            <input placeholder="Name" asp-for="@Model.NewFastFood.Name"/>
+            <span style="color:darkred;" asp-validation-for="@Model.NewFastFood.Name"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.NewFastFood.Description"></label>
+            <input placeholder="Description" asp-for="@Model.NewFastFood.Description"/>
+            <span style="color:darkred;" asp-validation-for="@Model.NewFastFood.Description"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.NewFastFood.Discount"></label>
+            <input placeholder="Discount" asp-for="@Model.NewFastFood.Discount"/>
+            <span style="color:darkred;" asp-validation-for="@Model.NewFastFood.Discount"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.NewFastFood.Price"></label>
+            <input placeholder="Price ($)" asp-for="@Model.NewFastFood.Price"/>
+            <span style="color:darkred;" asp-validation-for="@Model.NewFastFood.Price"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.NewFastFood.ImagePath"></label>
+            <input placeholder="Image Path" asp-for="@Model.NewFastFood.ImagePath"/>
+            <span style="color:darkred;" asp-validation-for="@Model.NewFastFood.ImagePath"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.NewFastFood.Ccal"></label>
+            <input placeholder="Calories (ccals)" asp-for="@Model.NewFastFood.Ccal"/>
+            <span style="color:darkred;" asp-validation-for="@Model.NewFastFood.Ccal"></span>
+        </div>
+        <button type="submit">Add New Fast-Food</button>
+    </form>
+    <a asp-action="Index" asp-controller="FastFood">Cancel</a>
+</section>

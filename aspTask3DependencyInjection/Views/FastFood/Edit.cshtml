@@ -1,0 +1,39 @@
+﻿@model FastFoodEditViewModel
+<section style="text-align:center;">
+    <h1>Welcome To Edit Page !</h1>
+    <form asp-action="Edit" asp-controller="FastFood">
+        <input style="display:none;" readonly asp-for="@Model.FastFood.Id"/>
+        <div>
+            <label asp-for="@Model.FastFood.Name"></label>
+            <input placeholder="Name" asp-for="@Model.FastFood.Name"/>
+            <span style="color:darkred;" asp-validation-for="@Model.FastFood.Name"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.FastFood.Description"></label>
+            <input placeholder="Description" asp-for="@Model.FastFood.Description"/>
+            <span style="color:darkred;" asp-validation-for="@Model.FastFood.Description"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.FastFood.Discount"></label>
+            <input placeholder="Discount" asp-for="@Model.FastFood.Discount"/>
+            <span style="color:darkred;" asp-validation-for="@Model.FastFood.Discount"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.FastFood.Price"></label>
+            <input placeholder="Price ($)" asp-for="@Model.FastFood.Price"/>
+            <span style="color:darkred;" asp-validation-for="@Model.FastFood.Price"></span>
+        </div>
+        <div style="display:none;">
+            <label asp-for="@Model.FastFood.ImagePath"></label>
+            <input placeholder="Image Path" asp-for="@Model.FastFood.ImagePath"/>
+            <span style="color:darkred;" asp-validation-for="@Model.FastFood.ImagePath"></span>
+        </div>
+        <div>
+            <label asp-for="@Model.FastFood.Ccal"></label>
+            <input placeholder="Calories (ccals)" asp-for="@Model.FastFood.Ccal"/>
+            <span style="color:darkred;" asp-validation-for="@Model.FastFood.Ccal"></span>
+        </div>
+        <button type="submit">Edit Fast-Food</button>
+    </form>
+    <a asp-action="Index" asp-controller="FastFood">Cancel</a>
+</section>

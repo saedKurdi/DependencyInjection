@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\aspTask3DependencyInjection\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B53A770-88F0-4476-A140-ABF6B08D2B20}|aspTask3DependencyInjection\\aspTask3DependencyInjection.csproj|c:\\users\\asus\\source\\repos\\asptask3dependencyinjection\\asptask3dependencyinjection\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B53A770-88F0-4476-A140-ABF6B08D2B20}|aspTask3DependencyInjection\\aspTask3DependencyInjection.csproj|solutionrelative:asptask3dependencyinjection\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\aspTask3DependencyInjection\\aspTask3DependencyInjection\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "aspTask3DependencyInjection\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\aspTask3DependencyInjection\\aspTask3DependencyInjection\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "aspTask3DependencyInjection\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T03:44:09.103Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

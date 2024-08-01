@@ -1,0 +1,19 @@
+﻿@model FastFoodIndexViewModel
+<section style="text-align:center;">
+    <h1>Welcome To Fast-Foods Page !</h1>
+    <ul style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:30px;">
+        @foreach (var f in Model.FastFoods)
+        {
+            <li style="border:1px solid springgreen;border-radius:10px;display:flex;flex-direction:column;gap:15px;justify-content:center;align-items:center;width:250px;height:450px;text-align:center;">
+                <img style="width:150px;height:200px" src=@f.ImagePath alt=@f.Name />
+                <h3 style="font-weight:bolder">@f.Name</h3>
+                <p>Description : @f.Description</p>
+                <p>Discounted Price : $@f.GetDiscountedPrice()</p>
+                <p>Discount : @f.Discount%</p>
+                <a asp-controller="FastFood" asp-action="Delete" asp-route-id=@f.Id>Delete Fast-Food</a>
+                <a asp-controller="FastFood" asp-action="Edit" asp-route-id=@f.Id>Edit Fast-Food</a>
+            </li>
+        }
+    </ul>
+    <a asp-controller="FastFood" asp-action="Add">Add New Fast-Food</a>
+</section>
